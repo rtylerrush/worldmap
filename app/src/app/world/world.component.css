@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+}
+
+svg {
+  fill: grey;
+}
+
+svg path{
+  stroke: black;
+  stroke-width: .25;
+}
+
+svg path:hover{
+  fill: #3e3c3f;
+}
+
+h3 {
+  color:white;
+}
