@@ -1,4 +1,4 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, inject, Input, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {AppComponent} from "../app.component";
 import {WorldbankService} from "../worldbank.service";
@@ -26,4 +26,11 @@ export class WorldComponent {
 
   }
 
+  protected readonly AppComponent = AppComponent;
+  @Input() countryName!: string;
+  @Input() countryCapital!: string;
+  @Input() countryIncomeLevel!: string;
+  @Input() countryRegion!: string;
+  @Input() countryLongitude!: string;
+  @Input() countryLatitude!: string;
 }
